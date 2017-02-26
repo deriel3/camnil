@@ -1,0 +1,417 @@
+html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+
+
+/* figure es la estructura para las mini imagenes */
+ figure {
+  margin: 0; background: #;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+
+/*este es el codigo para hacer mini zoom */
+.zoom:hover{
+	z-index: 10;
+	transform: scale(1.7);
+	-webkit-transform: scale(1.6);
+	}
+
+div#captioned-gallery {
+  width: 100%; overflow: hidden;
+}
+figure.slider {
+  position: relative;
+  width: 510%;
+  font-size: 0;
+  animation: 25s slidy infinite;
+}
+figure.slider figure {
+  width: 20%;
+  height: 100vh;
+  display: inline-block;  position: inherit;
+}
+figure.slider img {
+  width: 100%;
+  height: 100vh;
+}
+
+figure.slider figure figcaption {
+  position: absolute; bottom: 0;
+  background: rgba(00,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem;
+}
+
+/* codigo de las siguientes partes */
+.gallery {
+  text-align: center;
+  figure {R
+    display: inline;
+    margin: 0;
+    font-size: 0;
+    img {
+      display: inline-block;
+      max-width: 100%;
+      margin: 2px 4px;
+    }
+    &:hover img:not(:hover) {
+      opacity: 0.5;
+      filter: saturate(50%);
+      transition-delay: 0ms;
+    }
+  }
+}
+
+/* el nombre contacto */
+h4{
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color:black;
+  margin-top:0px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 0 2px 3px #555555;
+  font-family: Tahoma;
+}
+
+/*codigo del mapaa*/
+.mapamapa{
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#map_container{
+  position: relative;
+}
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 35%;
+    position: relative;;
+}
+
+.juanjuan {
+  position: absolute;
+  margin-left: 390px;
+  margin-top: -250px;
+}
+
+/*aqui esta en nuevo footer*/
+.footer-distributed{
+    background-color: rgba(26, 191, 58, 0.26);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+
+padding: 35px 30px;
+margin-top: 10px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 { /*Follow us*/
+color:  #f5f1f1;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+
+}
+
+.footer-distributed h3 span{ /*follow us*/
+color:  #f5f1f1;
+}
+.footer-distributed h4 /*Nombre de compañia*/
+{
+	color:  #f5f1f1;
+	font: normal 36px 'Cookie', cursive;
+	margin:0;
+	font-size: 95px;
+}
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{ /*Icono*/
+background-color:  #33383b;
+color: #f5f1f1;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center p{ /*texto*/
+display: inline-block;
+color: #f5f1f1;
+vertical-align: middle;
+margin:0;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right{
+width: 20%;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 35px;
+}
+
+.footer-distributed .footer-icons a{ /*iconos*/
+display: inline-block;
+width: 40px;
+height: 40px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 5px;
+
+font-size: 20px;
+color: #f5f1f1;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 30px;
+}
+.copyrigth    /*copyrigth*/
+{
+	color:#f5f1f1;
+	font-weight: bold;
+}
+
+/* IResponsive */
+
+@media (max-width: 880px) {
+
+.footer-distributed{
+font: bold 50px sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right,.copyright{
+display: block;
+width: 100%;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+
+}
+
+/* este es el codigo de daniel y de la estructura antigua */
+.parallax [class*="bg__"] {
+  position: relative;
+  height: 60vh;
+  text-indent: -6666px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+.parallax [class*="bg__"]:nth-child(2n) {
+  box-shadow: inset 0 0 1em #111;
+}
+.parallax .bg__foo, .parallax .bg__bazz {
+  height: 60vh;
+
+}
+.parallax .parallax, .bg__bazz {
+  height: 80vh;
+
+}
+.parallax .bg__foo {
+  background-image: url(https://dl.dropboxusercontent.com/s/0bvzl1p3nkm6918/metodologiaxd.png?dl=0);
+}
+.parallax .bg__bar {
+  background-image: url(https://dl.dropboxusercontent.com/s/nl22i4kyxg6ga13/posiblemmentesi.png?dl=0);
+}
+.parallax .bg__baz {
+  background-image: url(https://dl.dropboxusercontent.com/s/9al7rmd0v19nisb/procesooficialuno.png?dl=0);
+}
+.parallax .bg__bazz {
+  background-image: url(https://dl.dropboxusercontent.com/s/24kra8o4aqmxhgc/oficialexperiencia.png?dl=0);
+}
+.parallax .bg__break {
+  box-shadow: inset 0 0 1em #111;
+  background-image: url(https://dl.dropboxusercontent.com/s/rc2oh2y6t8k29ms/trabajooficial.png?dl=0);
+}
+article .container {
+  width: auto;
+  margin: auto;
+}
+article header {
+  position: relative;
+  margin: -5em 0 0 0;
+  padding: 1em;
+  text-align: left;
+  font-size: 2em;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+article h1, article h2 {
+  margin: 0;
+}
+article section {
+  padding: 0em;
+}
+article section.parallax {
+  margin: 0;
+  padding: 0;
+}
+#contac, #s, #p, #n, #m, #v{
+  color: #f5f1f1;
+}
+
+/*Esto agrego el daniel*/
+ul {
+  color: #7057c2;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+header
+{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+   background-color:rgba(26, 191, 58, 0.26);
+}
+
+header .logo
+{
+  color:black;
+  font-size: 50px;
+  line-height:200px ;
+  float: left;
+}
+header nav
+{
+  float:right;
+  line-height:200px;
+}
+header nav a
+{
+  display: inline-block;
+  color:#7647e9;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition:  all 500ms ease;
+}
+header nav a:hover
+{
+  background: rgba(0, 174, 238, 0.45);
+  border-radius: 50px;
+   cursor:pointer;
+}
+.header2
+{
+  position: fixed;
+  height: 100px;
+  z-index: 1;
+
+}
+.header2 .logo
+{
+  line-height: 100px;
+  font-size: 50px;
+  color: #f5f1f1;
+}
+.header2 nav
+{
+  line-height: 100px;
+}
+@media  screen and (max-width: 950px)
+{
+  header .logo , header nav
+  {
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+  }
+  .header2
+  {
+    height: auto;
+  }
+  .header2 .logo , .header2 nav
+  {
+    line-height: 50px;
+  }
+
+}
+.claro
+  {
+     background-color:rgba(147, 167, 113, 0.22);
+  }
+
+
+/* css de el video */
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+/* pop up*/
+#aviso{
+    margin: 0 auto;
+    bottom:30px;
+    position: fixed;
+    width: 100%;
+    padding: 30px 1px 1px 10px;
+    background: rgba(26, 191, 58, 0.26);
+    color: white;
+    text-align: center;
+    z-index: 9999999999;
+  }
+#aviso h2:hover
+{
+  cursor: pointer;
+}
